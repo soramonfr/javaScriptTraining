@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>🔮 Guess my number | A perfect sunday game</title>
+    <style>
+        body {
+            background-color:#fafafa;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5e227f;
+        }
+
+        h2 {
+            text-align: center;
+            color: #331940;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 7px;
+        }
+
+        p {
+            text-align: center left;
+            color: #331940;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+
+        .ready {
+            display: block;
+            margin-top: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            color: white;
+            background-color: #5e227f;
+            font-size: 17px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+            color: #5c5470;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Hello, welcome to my final projet! Let's have some fun!
+        </h1>
+        <h2>
+            📜 Here are the rules of my game 📜
+        </h2>
+        <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Cool cat gif" />
+        <p>
+            I'll pick a random number from 0 to 100 and you'll have <strong>10</strong> chances to guess it.
+            To help you with, I will tell you if your guess is too big or your guess is too small.
+            If you win, I'll send you a cool cat picture!
+            If not, well, too bad for you 😎!
+            <br />
+            <strong class="ready">
+                Are you ready 🕵️‍♀️ ?!
+            </strong>
+        </p>
+        <br />
+        <button>
+            🎰 Play Now! 🎰
+        </button>
+        <p class="footer">This page was built with a lot of 🤣 but also 😱 by Soraya Cruchet</p>
+    </div>
+    <script>
+        let greet = document.querySelector("h1");
+        function askName() {
+            let name = prompt("Hi, nice to meet you! What is your name?");
+            greet.innerHTML = `Hello ${name}, welcome to my final projet! Let's have some fun!`
+        }
+        askName();
+
+        let buttonPlay = document.querySelector("button");
+        function guessGame() {
+            let numberPick = Math.floor(Math.random() * 101);
+            let guess = Number(prompt("Guess my number, it is between 0 and 100"));
+            let trials = 0;
+            while (guess !== numberPick && trials < 11) {
+                if (guess < numberPick) {
+                    alert("🙇‍♀️ Your guess is too small");
+                }
+                else if (guess > numberPick) {
+                    alert("🙆‍♀️ Your guess is too big");
+                } else {
+                    alert("🧟‍♀️ Please write numbers");
+                }
+                trials++;
+                guess = Number(prompt("Guess my number, it is between 0 and 100"));
+            }
+
+            if (guess === numberPick) {
+                alert("Congratulations, I'll send you a cool cat picture 😸!");
+                let address = prompt("What is your email?");
+                alert("Thank you, the picture is sent 📧")
+            } else {
+                alert("Try again 😎!")
+            }
+        }
+        buttonPlay.addEventListener("click", guessGame)
+    </script>
+</body>
+
+</html>
