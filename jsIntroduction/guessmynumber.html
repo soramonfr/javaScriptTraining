@@ -8,7 +8,7 @@
     <title>🔮 Guess my number | A perfect sunday game</title>
     <style>
         body {
-            background-color:#fafafa;
+            background-color: #fafafa;
         }
 
         .container {
@@ -73,7 +73,7 @@
 <body>
     <div class="container">
         <h1>
-            Hello, welcome to my final projet! Let's have some fun!
+            Hello, welcome to my final project! Let's have some fun!
         </h1>
         <h2>
             📜 Here are the rules of my game 📜
@@ -81,7 +81,7 @@
         <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Cool cat gif" />
         <p>
             I'll pick a random number from 0 to 100 and you'll have <strong>10</strong> chances to guess it.
-            To help you with, I will tell you if your guess is too big or your guess is too small.
+            To help you with, I will tell you if your guess is too big or too small.
             If you win, I'll send you a cool cat picture!
             If not, well, too bad for you 😎!
             <br />
@@ -93,13 +93,15 @@
         <button>
             🎰 Play Now! 🎰
         </button>
-        <p class="footer">This page was built with a lot of 🤣 but also 😱 by Soraya Cruchet</p>
+        <p class="footer">
+            This page was built with a lot of 🤣 but also 😱 by <a href="https://www.linkedin.com/in/sorayacruchet/">Soraya Cruchet</a>
+        </p>
     </div>
     <script>
         let greet = document.querySelector("h1");
         function askName() {
             let name = prompt("Hi, nice to meet you! What is your name?");
-            greet.innerHTML = `Hello ${name}, welcome to my final projet! Let's have some fun!`
+            greet.innerHTML = `Hello ${name}, welcome to my final project! Let's have some fun!`
         }
         askName();
 
