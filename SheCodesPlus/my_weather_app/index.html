@@ -12,55 +12,71 @@
 
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12 search-bar">
-                        <form class="form-group">
-                            <input class="form-control" type="search" placeholder="Search" /><i
-                                    class="fas fa-search"></i>
+        <div class="row">
+            <div class="col card-col">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-10">
+                                    <input class="form-control search-bar" type="search"
+                                        placeholder="Enter a city..." />
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light btn-outline-secondary submit-button" type="submit"><i
+                                            class="fas fa-search"></i></button>
+                                </div>
+                                <!-- <div class="col">
+                                    <button class="btn btn-light btn-outline-secondary celsius-unit"
+                                        type="submit">ºC</i></button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-light btn-outline-secondary fahrenheit-unit"
+                                        type="submit">ºF</button>
+                                </div> -->
+                            </div>
                         </form>
-                    </div>
-                </div>
-                <div class="local-datas">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>20°C</h1>
-                            <h2>Lyon</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">Sunday, 12:30</div>
-                        <div class="col-6">
-                            <div class="precipitation"><i class="fas fa-umbrella"></i> Precipitation: 93%</div>
-                            <div class="wind"><i class="fas fa-wind"></i> Wind: 4km/h</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <div class="day">Mon</div>
-                            <div class="icon"><i class="fas fa-cloud"></i></div>
-                            <div class="temp">2°c</div>
-                        </div>
-                        <div class="col-2">
-                            <div class="day">Tue</div>
-                            <div class="icon"><i class="fas fa-cloud-sun-rain"></i></div>
-                            <div class="temp">5°c</div>
-                        </div>
-                        <div class="col-2">
-                            <div class="day">Wed</div>
-                            <div class="icon"><i class="fas fa-cloud-showers-heavy"></i></div>
-                            <div class="temp">5°C</div>
-                        </div>
-                        <div class="col-2">
-                            <div class="day">Thu</div>
-                            <div class="icon"><i class="fas fa-sun"></i></div>
-                            <div class="temp">7°C</div>
-                        </div>
-                        <div class="col-2">
-                            <div class="day">Fri</div>
-                            <div class="icon"><i class="far fa-snowflake"></i></div>
-                            <div class="temp">6°C</div>
+                        <div class="local-datas">
+                            <div class="row current-temp">
+                                <div class="col">
+                                    <h1>20°C</h1>
+                                    <h2>Lyon</h2>                                    
+                                </div>
+                            </div>
+                            <div class="row day-parameters">
+                                <div class="col current-day">Sunday, 12:30</div>
+                                <div class="col current-parameters">
+                                    <div class="precipitation"><i class="fas fa-umbrella"></i> Precipitation: 93%</div>
+                                    <div class="wind"><i class="fas fa-wind"></i> Wind: 4km/h</div>
+                                </div>
+                            </div>
+                            <div class="row previsions">
+                                <div class="col">
+                                    <div class="day">Mon</div>
+                                    <div class="icon"><i class="fas fa-cloud"></i></div>
+                                    <div class="temp">2°C</div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">Tue</div>
+                                    <div class="icon"><i class="fas fa-cloud-sun-rain"></i></div>
+                                    <div class="temp">5°C</div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">Wed</div>
+                                    <div class="icon"><i class="fas fa-cloud-showers-heavy"></i></div>
+                                    <div class="temp">5°C</div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">Thu</div>
+                                    <div class="icon"><i class="fas fa-sun"></i></div>
+                                    <div class="temp">7°C</div>
+                                </div>
+                                <div class="col">
+                                    <div class="day">Fri</div>
+                                    <div class="icon"><i class="far fa-snowflake"></i></div>
+                                    <div class="temp">0°C</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
