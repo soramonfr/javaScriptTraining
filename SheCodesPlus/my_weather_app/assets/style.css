@@ -1,28 +1,61 @@
-.card {
-  background-image: url("https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-  background-size: 100%;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #70702c;
+  background-image: url("https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.current-temp {
-  margin: 100px;
+.weather-app {
+  background-image: linear-gradient(to bottom, #f1e1c7 10%, #fcd84c 90%);
+  border: solid 1px #a9a9a9;
+  padding: 10px;
+  margin: 150px auto;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.date {
   text-align: center;
+  margin-bottom: 70px;
 }
 
-.current-parameters {
-  text-align: left;
-  margin-left: 80px;
-}
-
-.current-day {
-  font-size: 25px;
-  text-align: right;
-  margin-right: 80px;
-}
-
-.previsions {
+h1 {
   text-align: center;
+  margin: 0;
 }
 
-.day {
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.parameters {
+  margin: 0 auto;
+  width: 150px;
+  margin-bottom: 70px;
+}
+
+.previsions ul {
+  text-align: center;
+  padding: 0;
+}
+
+.previsions li {
+  list-style: none;
+}
+
+ul .day {
   font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
+  font-weight: lighter;
 }
