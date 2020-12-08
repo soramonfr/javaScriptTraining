@@ -12,6 +12,5 @@ console.log(attraction.toLowerCase());
 
 console.log(place.toUpperCase());
 
-place = place.toLowerCase();
-let sentence = `I went to visit the ${attraction} in ${city}, right next to my ${place}. Now, I'm getting ready for my trip to ${country}!`;
+let sentence = `I went to visit the ${attraction} in ${city}, right next to my ${place.toLowerCase()}. Now, I'm getting ready for my trip to ${country}!`;
 console.log(sentence);
