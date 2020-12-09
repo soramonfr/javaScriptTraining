@@ -14,7 +14,7 @@ console.log(weather.humidity);
 console.log(weather.temperature);
 
 // Challenge 4
-weather.windSpeed = 5;{
+weather.windSpeed = 5;
 console.log(weather.windSpeed);
 
 // Challenge 5
