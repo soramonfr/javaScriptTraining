@@ -20,6 +20,7 @@ console.log(weather.windSpeed);
 // Challenge 5
 console.log(weather["temperature"]);
 console.log(weather["humidity"]);
+console.log(weather["windSpeed"]);
 
 // Challenge 6
 let forecast = [
