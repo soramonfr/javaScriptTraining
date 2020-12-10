@@ -40,14 +40,13 @@ city = city.toLowerCase();
 // }
 
 // Simplification du code
-let temperature = weather[city].temp;
-console.log(temperature);
-let temperatureCelsius = Math.round(temperature);
-let temperatureFahrenheit = Math.round(temperatureCelsius * 9/5) + 32;
-let humidity = weather[city].humidity;
 
-if (city !== undefined) {
-    alert (`It is currently ${temperatureCelsius} °C (${temperatureFahrenheit}°F) in ${city} with a humidity of ${humidity} %.`);
+if (weather[city] !== undefined) {
+    let temperature = weather[city].temp;
+    let temperatureCelsius = Math.round(temperature);
+    let temperatureFahrenheit = Math.round(temperatureCelsius * 9 / 5) + 32;
+    let humidity = weather[city].humidity;
+    alert(`It is currently ${temperatureCelsius} °C (${temperatureFahrenheit}°F) in ${city} with a humidity of ${humidity} %.`);
 } else {
     alert(`Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`);
 }
