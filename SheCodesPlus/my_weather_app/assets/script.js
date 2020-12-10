@@ -42,6 +42,7 @@ city = city.toLowerCase();
 // Simplification du code
 let temperature = weather[city].temp;
 console.log(temperature);
-let temperatureCelsius = temperature;
-let temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+let temperatureCelsius = Math.round(temperature);
+let temperatureFahrenheit = Math.round(temperatureCelsius * 9/5) + 32;
+let humidity = weather[city].humidity;
 
