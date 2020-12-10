@@ -36,7 +36,7 @@ city = city.toLowerCase();
 // } else if (city === "moscow") {
 //     alert(`It is currently ${weather["moscow"].temp} °C (${weather["moscow"].temp + 32}°F) in ${city} with a humidity of ${weather["moscow"].humidity} %.`);
 // } else {
-//     alert(`Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`)
+//     alert(`Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`);
 // }
 
 // Simplification du code
@@ -46,3 +46,8 @@ let temperatureCelsius = Math.round(temperature);
 let temperatureFahrenheit = Math.round(temperatureCelsius * 9/5) + 32;
 let humidity = weather[city].humidity;
 
+if (city !== undefined) {
+    alert (`It is currently ${temperatureCelsius} °C (${temperatureFahrenheit}°F) in ${city} with a humidity of ${humidity} %.`);
+} else {
+    alert(`Sorry, we don't know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`);
+}
