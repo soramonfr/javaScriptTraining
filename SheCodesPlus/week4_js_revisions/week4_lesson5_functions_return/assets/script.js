@@ -10,19 +10,19 @@
 //   }
 // }
 
-function isWindy(speed) {
-  if (speed > 5) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function isWindy(speed) {
+//   if (speed > 5) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-if (isWindy(4)) {
-  alert ("It is windy");
-} else {
-  alert ("It is not windy");
-}
+// if (isWindy(4)) {
+//   alert ("It is windy");
+// } else {
+//   alert ("It is not windy");
+// }
 
 
 // Challenge 2
@@ -35,7 +35,7 @@ let wind = prompt("What is the wind speed?");
 let unit = prompt("What is the unit? (metric or imperial)")
 
 function isWindy2(speed, unit) {
-  if (speed > 5 && unit === "metric") {
+  if ((speed > 5 && unit != "imperial")) {
     return true;
   } else {
     return false;
