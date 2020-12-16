@@ -2,27 +2,27 @@
 // 1. Modify the function is Windy and return true if the speed is greater than 5 and false if not
 // 2. Call the function and alert ‘It is windy’ if it is windy, Else, alert ‘It is not windy’
 
-// function isWindy(speed) {
-//   if (speed > 5) {
-//     alert("It is windy");
-//   } else {
-//     alert("It is not windy");
-//   }
-// }
+function isWindy(speed) {
+  if (speed > 5) {
+    alert("It is windy");
+  } else {
+    alert("It is not windy");
+  }
+}
 
-// function isWindy(speed) {
-//   if (speed > 5) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+function isWindy(speed) {
+  if (speed > 5) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-// if (isWindy(4)) {
-//   alert ("It is windy");
-// } else {
-//   alert ("It is not windy");
-// }
+if (isWindy(4)) {
+  alert("It is windy");
+} else {
+  alert("It is not windy");
+}
 
 
 // Challenge 2
@@ -43,9 +43,9 @@ function isWindy2(speed, unit) {
 }
 
 if (isWindy2(wind, unit)) {
-  alert ("It is windy");
+  alert("It is windy");
 } else {
-  alert ("It is not windy");
+  alert("It is not windy");
 }
 
 // Révisions table de vérité
