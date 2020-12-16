@@ -31,6 +31,8 @@ if (isWindy(4)) {
 // 3. Test both scenarios
 // isWindy(2, 'imperial') should return false
 // isWindy(20, 'metric') should return true
+let wind = prompt("What is the wind speed?");
+let unit = prompt("What is the unit? (metric or imperial)")
 
 function isWindy2(speed, unit) {
   if (speed > 5 && unit === "metric") {
@@ -40,7 +42,7 @@ function isWindy2(speed, unit) {
   }
 }
 
-if (isWindy2(20, "metric")) {
+if (isWindy2(wind, unit)) {
   alert ("It is windy");
 } else {
   alert ("It is not windy");
