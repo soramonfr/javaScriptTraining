@@ -2,13 +2,13 @@
 // 1. Modify the function is Windy and return true if the speed is greater than 5 and false if not
 // 2. Call the function and alert ‘It is windy’ if it is windy, Else, alert ‘It is not windy’
 
-function isWindy(speed) {
-  if (speed > 5) {
-    alert("It is windy");
-  } else {
-    alert("It is not windy");
-  }
-}
+// function isWindy(speed) {
+//   if (speed > 5) {
+//     alert("It is windy");
+//   } else {
+//     alert("It is not windy");
+//   }
+// }
 
 function isWindy(speed) {
   if (speed > 5) {
