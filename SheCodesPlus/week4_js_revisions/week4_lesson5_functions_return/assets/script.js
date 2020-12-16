@@ -32,6 +32,20 @@ if (isWindy(4)) {
 // isWindy(2, 'imperial') should return false
 // isWindy(20, 'metric') should return true
 
+function isWindy2(speed, unit) {
+  if (speed > 5 && unit === "metric") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+if (isWindy2(20, "metric")) {
+  alert ("It is windy");
+} else {
+  alert ("It is not windy");
+}
+
 // Révisions table de vérité
 // ET (&&)
 // A | B | Result
