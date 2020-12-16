@@ -18,7 +18,7 @@ function isWindy(speed) {
   }
 }
 
-if (isWindy(speed, true)) {
+if (isWindy(4)) {
   alert ("It is windy");
 } else {
   alert ("It is not windy");
@@ -31,3 +31,29 @@ if (isWindy(speed, true)) {
 // 3. Test both scenarios
 // isWindy(2, 'imperial') should return false
 // isWindy(20, 'metric') should return true
+
+// Révisions table de vérité
+// ET (&&)
+// A | B | Result
+// 0   0   0
+// 1   0   0
+// 0   1   0
+// 1   1   1 
+
+// OU (||)
+// A | B | Result
+// 0   0   0
+// 1   0   1
+// 0   1   1
+// 1   1   1 
+
+// OU EXCLUSIF (XOR)
+// A | B | Result
+// 0   0   0
+// 1   0   1
+// 0   1   1
+// 1   1   0
+
+// Opérateurs logiques
+// A && B || C
+// C || (A && B) <=> C ou A ET C ou B
