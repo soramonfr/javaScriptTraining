@@ -35,7 +35,7 @@ let wind = prompt("What is the wind speed?");
 let unit = prompt("What is the unit? (metric or imperial)")
 
 function isWindy2(speed, unit) {
-  if ((speed > 5 && unit != "imperial")) {
+  if ((speed > 5 && unit === "metric")) {
     return true;
   } else {
     return false;
