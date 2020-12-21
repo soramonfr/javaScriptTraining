@@ -53,8 +53,8 @@ h2.innerHTML = `Today is ${day}, ${month} ${date}, ${year}.`;
 
 // Challenge 7
 function formatDate(date) {
-  let yearCurrent = now.getFullYear();
-  let dateCurrent = now.getDate();
+  let yearCurrent = date.getFullYear();
+  let dateCurrent = date.getDate();
 
   let daysCurrent = [
     "Sunday",
@@ -65,7 +65,7 @@ function formatDate(date) {
     "Friday",
     "Saturday"
   ];
-  dayCurrent = daysCurrent[now.getDay()];
+  let dayCurrent = daysCurrent[date.getDay()];
 
   let monthsCurrent = [
     "January",
@@ -81,9 +81,10 @@ function formatDate(date) {
     "November",
     "December"
   ];
-  monthCurrent = monthsCurrent[now.getMonth()];
-  let formattedDate = `Today is ${dayCurrent}, ${monthCurrent} ${dateCurrent}, ${yearCurrent}.`;
+  let monthCurrent = monthsCurrent[date.getMonth()];
+  let formattedDate = `It is ${dayCurrent}, ${monthCurrent} ${dateCurrent}, ${yearCurrent}.`;
   return formattedDate;
 }
 
-console.log(formatDate(now));
+let dateToGuess = new Date("1988/01/06");
+console.log(formatDate(dateToGuess));
