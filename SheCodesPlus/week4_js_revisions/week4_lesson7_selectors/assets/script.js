@@ -8,7 +8,7 @@ console.log(document.querySelectorAll(".country"));
 
 // Challenge 3
 // Add class special to the li with id special
-let liSpecial = document.querySelector("li#special");
+let liSpecial = document.querySelector("#special");
 liSpecial.classList.add("special");
 console.log(liSpecial.className);
 
