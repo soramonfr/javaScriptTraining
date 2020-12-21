@@ -1,10 +1,10 @@
 // Challenge 1
 // Log li with id special
-console.log(document.querySelector("li#special"));
+console.log(document.querySelector("#special"));
 
 // Challenge 2
 // Log all li with class of country
-console.log(document.querySelectorAll("li.country"));
+console.log(document.querySelectorAll(".country"));
 
 // Challenge 3
 // Add class special to the li with id special
