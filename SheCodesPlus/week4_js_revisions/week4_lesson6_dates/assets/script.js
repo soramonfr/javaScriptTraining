@@ -52,7 +52,7 @@ month = months[now.getMonth()];
 h2.innerHTML = `Today is ${day}, ${month} ${date}, ${year}.`;
 
 // Challenge 7
-function formatDate(currentTime) {
+function formatDate(date) {
   let yearCurrent = now.getFullYear();
   let dateCurrent = now.getDate();
 
@@ -82,7 +82,8 @@ function formatDate(currentTime) {
     "December"
   ];
   monthCurrent = monthsCurrent[now.getMonth()];
-  currentTime = `Today is ${dayCurrent}, ${monthCurrent} ${dateCurrent}, ${yearCurrent}.`;
+  let formattedDate = `Today is ${dayCurrent}, ${monthCurrent} ${dateCurrent}, ${yearCurrent}.`;
+  return formattedDate;
 }
 
-console.log(formatDate(currentTime));
+console.log(formatDate(now));
