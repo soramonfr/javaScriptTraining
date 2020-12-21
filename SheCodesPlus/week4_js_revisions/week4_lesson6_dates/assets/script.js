@@ -86,5 +86,5 @@ function formatDate(date) {
   return formattedDate;
 }
 
-let dateToGuess = new Date("1988/01/06");
+let dateToGuess = new Date("1912/01/06");
 console.log(formatDate(dateToGuess));
