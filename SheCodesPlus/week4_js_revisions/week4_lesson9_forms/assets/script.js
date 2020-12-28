@@ -28,5 +28,5 @@ function alertInfos(event) {
     alert(`Your username is ${usernameInput.value}`);
 }
 
-let formSubmit = document.querySelector("#signup-form");
-formSubmit.addEventListener("submit", alertInfos);
+let signupForm = document.querySelector("#signup-form");
+signupForm.addEventListener("submit", alertInfos);
