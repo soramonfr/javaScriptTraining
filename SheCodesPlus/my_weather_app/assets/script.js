@@ -33,4 +33,25 @@ function cityDisplay(event) {
 let formSubmit = document.querySelector("form");
 formSubmit.addEventListener("submit", cityDisplay);
 
-// Feature #3 - Display a fake temperature (i.e 17) in Celsius and add a link to convert it to Fahrenheit. When clicking on it, it should convert the temperature to Fahrenheit. When clicking on Celsius, it should convert it back to Celsius.
+// Feature #3 (bonus)- Display a fake temperature (i.e 17) in Celsius and add a link to convert it to Fahrenheit. When clicking on it, it should convert the temperature to Fahrenheit. When clicking on Celsius, it should convert it back to Celsius.
+let temperature = document.querySelector("#current-temperature");
+
+// Celsius display
+function displayDegree(event) {
+    event.preventDefault();
+    let celsiusValue = Math.round(temperature);
+    temperature.innerHTML = `${celsiusValue}`;
+}
+
+let degreeTemperature = document.querySelector("#degree-temperature");
+degreeTemperature.addEventListener("click", displayDegree);
+
+// Fahrenheit display
+function displayFahrenheit(event) {
+    event.preventDefault();
+    let fahrenheitValue = Math.round(temperature * 9 / 5) + 32;
+    temperature.innerHTML = `${fahrenheitValue}`;
+}
+
+let fahrenheitTemperature = document.querySelector("#fahrenheit-temperature");
+fahrenheitTemperature.addEventListener("click", displayFahrenheit);
