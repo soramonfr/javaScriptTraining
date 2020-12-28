@@ -17,7 +17,6 @@ let days = [
 currentDay.innerHTML = days[now.getDay()];
 
 // Hour display
-
 let currentHour = document.querySelector("#current-hour");
 if (now.getMinutes() < 10) {
     let currentMinutes = "0" + now.getMinutes();
