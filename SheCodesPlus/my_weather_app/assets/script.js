@@ -16,11 +16,14 @@ currentDay.innerHTML = days[now.getDay()];
 
 // Hour display
 let currentHour = document.querySelector("#current-hour");
-if (now.getMinutes() < 10) {
-    let currentMinutes = "0" + now.getMinutes();
-    currentHour.innerHTML = `${now.getHours()}:${currentMinutes}`;
-} else {
-    currentHour.innerHTML = `${now.getHours()}:${now.getMinutes()}`;
+let hours = now.getHours();
+let minutes = now.getMinutes();
+
+if (hours < 10) {
+    hours = `0${hours}`;
+}
+if (minutes < 10) {
+    minutes = `0${minutes}`;
 }
 
 // Feature #2 - Add a search engine, when searching for a city (i.e. Paris), display the city name on the page after the user submits the form.
