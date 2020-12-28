@@ -15,7 +15,7 @@ function alertPwd(event) {
     alert(`Your password is ${pwdInput.value}`);
 }
 
-let form = document.querySelector("form");
+let form = document.querySelector("#password-form");
 form.addEventListener("submit", alertPwd);
 
 // Challenge 3
@@ -28,5 +28,5 @@ function alertInfos(event) {
     alert(`Your username is ${usernameInput.value}`);
 }
 
-let formSubmit = document.querySelector("form");
+let formSubmit = document.querySelector("#signup-form");
 formSubmit.addEventListener("submit", alertInfos);
