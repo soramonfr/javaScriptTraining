@@ -4,12 +4,26 @@
 // id="city-input" (h2)
 
 let now = new Date();
+
+// Day display
 let currentDay = document.querySelector("#current-day");
-currentDay.innerHTML = now.getDay();
+let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+];
+currentDay.innerHTML = days[now.getDay()];
+
+// Hour display
+
+let currentHour = document.querySelector("#current-hour");
+currentHour.innerHTML = now.getHours();
 
 // now.getMinutes();
-// now.getHours();
-// now.getDay();
 
 // Feature #2 - Add a search engine, when searching for a city (i.e. Paris), display the city name on the page after the user submits the form. 
 
