@@ -1,6 +1,4 @@
 // Feature #1 - In your project, display the current date and time using JavaScript
-// id="city-input" (h2)
-
 let now = new Date();
 
 // Day display
