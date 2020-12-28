@@ -26,6 +26,8 @@ if (minutes < 10) {
     minutes = `0${minutes}`;
 }
 
+currentHour.innerHTML = `${hours}:${minutes}`;
+
 // Feature #2 - Add a search engine, when searching for a city (i.e. Paris), display the city name on the page after the user submits the form.
 
 function cityDisplay(event) {
