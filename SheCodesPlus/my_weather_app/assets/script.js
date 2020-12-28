@@ -21,9 +21,7 @@ currentDay.innerHTML = days[now.getDay()];
 // Hour display
 
 let currentHour = document.querySelector("#current-hour");
-currentHour.innerHTML = now.getHours();
-
-// now.getMinutes();
+currentHour.innerHTML = `${now.getHours()}:${now.getMinutes()}`;
 
 // Feature #2 - Add a search engine, when searching for a city (i.e. Paris), display the city name on the page after the user submits the form. 
 
