@@ -20,3 +20,13 @@ form.addEventListener("submit", alertPwd);
 
 // Challenge 3
 
+function alertInfos(event) {
+    event.preventDefault();
+    let emailInput = document.querySelector("#email-input");
+    alert(`Your email is ${emailInput.value}`);
+    let usernameInput = document.querySelector("#username-input");
+    alert(`Your username is ${usernameInput.value}`);
+}
+
+let formSubmit = document.querySelector("form");
+formSubmit.addEventListener("submit", alertInfos);
