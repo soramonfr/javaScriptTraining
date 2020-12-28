@@ -26,7 +26,8 @@ currentHour.innerHTML = `${now.getHours()}:${now.getMinutes()}`;
 function cityDisplay(event) {
     event.preventDefault();
     let cityInput = document.querySelector("#city-input");
-    cityInput.innerHTML = `${cityInput.value}`;
+    let cityName = document.querySelector("#city-name");
+    cityName.innerHTML = `${cityInput.value}`;
 }
 
 let formSubmit = document.querySelector("form");
