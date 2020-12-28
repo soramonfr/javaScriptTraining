@@ -17,3 +17,6 @@ function alertPwd(event) {
 
 let form = document.querySelector("form");
 form.addEventListener("submit", alertPwd);
+
+// Challenge 3
+
