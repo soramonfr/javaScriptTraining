@@ -22,3 +22,6 @@ axios.get(`${apiUrl}&APPID=${apiKey}`).then(showTemperature);
 // Challenge 5
 // let h1 = document.querySelector("h1");
 // h1.innerHTML = `It is 🌡${temperature} celsius degrees in Sydney!`;
+
+// Bonus
+// Create a city variable so you can easily replace all the datas and generate a link and h1 for each city.
