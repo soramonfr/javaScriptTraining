@@ -24,4 +24,3 @@ function getTemperature(position) {
 
 // Let's first get the temperature of the current position via getTemperature and then show it via showTemperature
 navigator.geolocation.getCurrentPosition(getTemperature);
-
