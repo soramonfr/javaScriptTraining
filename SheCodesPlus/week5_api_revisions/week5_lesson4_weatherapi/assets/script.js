@@ -10,5 +10,6 @@ function showTemperature(response) {
     console.log(response);
 }
 
-let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=sydney";
+// By default, unit mesure is Kelvin so we have to set up the unit we want using &units=metric (celsius) or imperial (fahrenheit)
+let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=sydney&units=metric";
 axios.get(`${apiUrl}&APPID=${apiKey}`).then(showTemperature);
