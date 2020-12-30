@@ -62,7 +62,7 @@ function showTemperature(response) {
     temperatureDisplay.innerHTML = `${apiTemperature}`;
 }
 
-// When searching for a city, display the city name on the page after the user submits the form.
+// When searching for a city, display the city name on the page after the user submits the form. Use axios to get the API datas related to this city.
 function cityDisplay(event) {
     event.preventDefault();
     // Get the data
