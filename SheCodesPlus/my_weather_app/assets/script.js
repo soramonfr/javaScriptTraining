@@ -65,3 +65,19 @@ let fahrenheitTemperature = document.querySelector("#fahrenheit-temperature");
 fahrenheitTemperature.addEventListener("click", displayFahrenheit);
 
 // New challenge, using API: On your project, when a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
+
+// Show the temperature & the city
+function showTemperature(response) {
+    let apiTemperature = Math.round(response.data.main.temp);
+    let cityDisplay = document.querySelector("#city-name");
+    let temperatureDisplay = document.querySelector("#current-temperature");
+    cityDisplay.innerHTML = `${apiCity}`;
+    temperatureDisplay.innerHTML = `${apiTemperature}`;    
+}
+
+// Get the data
+let apiCity = document.querySelector("#city-input");
+let apiUnit = "metric";
+let apiKey = "c3713b1bcebb5ce5f896fa8a7eec12ab";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${apiCity}&units=${apiUnit}&appid=${apiKey}`;
+axios.get(apiUrl).then(showTemperature);
