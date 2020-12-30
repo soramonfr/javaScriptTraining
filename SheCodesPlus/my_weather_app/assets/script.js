@@ -28,17 +28,6 @@ if (minutes < 10) {
 
 currentHour.innerHTML = `${hours}:${minutes}`;
 
-// Feature #2 - Add a search engine, when searching for a city (i.e. Paris), display the city name on the page after the user submits the form.
-
-// function cityDisplay(event) {
-//     event.preventDefault();
-//     let cityInput = document.querySelector("#city-input");
-//     let cityName = document.querySelector("#city-name");
-//     cityName.innerHTML = `${cityInput.value}`;
-// }
-
-// let formSubmit = document.querySelector("form");
-// formSubmit.addEventListener("submit", cityDisplay);
 
 // // Feature #3 (bonus)- Display a fake temperature (i.e 17) in Celsius and add a link to convert it to Fahrenheit. When clicking on it, it should convert the temperature to Fahrenheit. When clicking on Celsius, it should convert it back to Celsius.
 // let temperature = 17;
@@ -64,26 +53,25 @@ currentHour.innerHTML = `${hours}:${minutes}`;
 // let fahrenheitTemperature = document.querySelector("#fahrenheit-temperature");
 // fahrenheitTemperature.addEventListener("click", displayFahrenheit);
 
-// New challenge, using API: On your project, when a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
+// Using API: When a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
 
-// Show the temperature & the city
-
-
+// Display the current temperature of the city, via the API.
 function showTemperature(response) {
     let apiTemperature = Math.round(response.data.main.temp);
     let temperatureDisplay = document.querySelector("#current-temperature");
-    temperatureDisplay.innerHTML = `${apiTemperature.value}`;
+    temperatureDisplay.innerHTML = `${apiTemperature}`;
 }
 
+// When searching for a city, display the city name on the page after the user submits the form.
 function cityDisplay(event) {
     event.preventDefault();
     // Get the data
-    let apiCity = document.querySelector("#city-input");
-    let cityDisplay = document.querySelector("#city-name");
-    cityDisplay.innerHTML = `${apiCity.value}`;
+    let cityInput = document.querySelector("#city-input");
+    let cityName = document.querySelector("#city-name");
+    cityName.innerHTML = `${cityInput.value}`;
     let apiUnit = "metric";
     let apiKey = "c3713b1bcebb5ce5f896fa8a7eec12ab";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${apiCity.value}&units=${apiUnit}&appid=${apiKey}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityInput.value}&units=${apiUnit}&appid=${apiKey}`;
     axios.get(apiUrl).then(showTemperature);
 }
 
