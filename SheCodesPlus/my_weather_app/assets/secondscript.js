@@ -63,5 +63,3 @@ function displayFahrenheit(event) {
 
 let fahrenheitTemperature = document.querySelector("#fahrenheit-temperature");
 fahrenheitTemperature.addEventListener("click", displayFahrenheit);
-
-// New challenge, using API: On your project, when a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
