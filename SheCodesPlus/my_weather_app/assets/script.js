@@ -1,4 +1,4 @@
-// Feature #1 - In your project, display the current date and time using JavaScript
+// Feature #1 - Display the current date and time
 let now = new Date();
 
 // Day display
@@ -28,32 +28,7 @@ if (minutes < 10) {
 
 currentHour.innerHTML = `${hours}:${minutes}`;
 
-
-// // Feature #3 (bonus)- Display a fake temperature (i.e 17) in Celsius and add a link to convert it to Fahrenheit. When clicking on it, it should convert the temperature to Fahrenheit. When clicking on Celsius, it should convert it back to Celsius.
-// let temperature = 17;
-// let temperatureValue = document.querySelector("#current-temperature");
-
-// // Celsius display
-// function displayDegree(event) {
-//     event.preventDefault();
-//     let celsiusValue = Math.round(temperature);
-//     temperatureValue.innerHTML = `${celsiusValue}`;
-// }
-
-// let degreeTemperature = document.querySelector("#degree-temperature");
-// degreeTemperature.addEventListener("click", displayDegree);
-
-// // Fahrenheit display
-// function displayFahrenheit(event) {
-//     event.preventDefault();
-//     let fahrenheitValue = Math.round(temperature * 9 / 5) + 32;
-//     temperatureValue.innerHTML = `${fahrenheitValue}`;
-// }
-
-// let fahrenheitTemperature = document.querySelector("#fahrenheit-temperature");
-// fahrenheitTemperature.addEventListener("click", displayFahrenheit);
-
-// Using API: When a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
+// Feature #2 - Using API: When a user searches for a city (example: New York), it should display the name of the city on the result page and the current temperature of the city.
 
 // Display the current temperature of the city, via the API.
 function showTemperature(response) {
