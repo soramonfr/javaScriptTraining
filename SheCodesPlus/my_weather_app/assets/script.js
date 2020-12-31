@@ -53,3 +53,6 @@ function cityDisplay(event) {
 // Form submission
 let formSubmit = document.querySelector("form");
 formSubmit.addEventListener("submit", cityDisplay);
+
+// Add a Current Location button. 
+// When clicking on it, it uses the Geolocation API to get your GPS coordinates and display and the city and current temperature using the OpenWeather API.

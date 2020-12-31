@@ -19,13 +19,19 @@
             <!-- Search-bar -->
             <form>
                 <div class="form-row">
-                    <div class="col-10">
+                    <div class="col-8">
                         <input class="form-control search-bar shadow-sm" type="search" id="city-input" autofocus="on"
                             placeholder="Enter a city..." />
                     </div>
                     <div class="col">
-                        <button class="btn btn-light btn-outline-secondary submit-button shadow-sm" type="submit"><i
-                                class="fas fa-search"></i></button>
+                        <button class="btn btn-light btn-outline-secondary submit-button shadow-sm" type="submit" title="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="col geolocation">
+                        <button class="btn btn-light btn-outline-secondary submit-button shadow-sm" type="submit" title="Display current location">
+                            <i class="fas fa-location-arrow"></i> 
+                        </button>
                     </div>
                 </div>
             </form>
