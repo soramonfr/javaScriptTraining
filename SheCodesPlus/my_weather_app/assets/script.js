@@ -57,7 +57,7 @@ formSubmit.addEventListener("submit", cityDisplay);
 // Add a Current Location button. 
 // When clicking on it, it uses the Geolocation API to get your GPS coordinates and display and the city and current temperature using the OpenWeather API.
 
-function showTemperature(response) {
+function showGeolocation(response) {
     // Get and display the temperature
     let apiTemperature = Math.round(response.data.main.temp);
     let temperatureDisplay = document.querySelector("#current-temperature");
@@ -67,21 +67,21 @@ function showTemperature(response) {
     cityName.innerHTML = `${response.data.name}`;
 }
 
-function geolocationDisplay(event) {
+function geolocationData(event) {
     event.preventDefault();
-    function getTemperature(position) {
+    function getData(position) {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
         let unit = "metric";
         let apiKey = "c3713b1bcebb5ce5f896fa8a7eec12ab";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${unit}&appid=${apiKey}`;
-        axios.get(apiUrl).then(showTemperature);
+        axios.get(apiUrl).then(showGeolocation);
     }
-    // Let's first get the temperature of the current position via getTemperature and then show it via showTemperature
-    navigator.geolocation.getCurrentPosition(getTemperature);
+    // Let's first get the temperature of the current position via getTemperature and then show it via showGeolocation
+    navigator.geolocation.getCurrentPosition(getData);
 }
 
 // Geolocation Btn 
 let geolocationBtn = document.querySelector("#geolocation-button");
-geolocationBtn.addEventListener("click", geolocationDisplay);
+geolocationBtn.addEventListener("click", geolocationData);
 
